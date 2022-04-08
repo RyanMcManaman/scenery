@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
-    "scenery-api": "apps/scenery-api"
+    "scenery-api": "apps/scenery-api",
+    "scenery-stays": "libs/scenery-stays"
   }
 }

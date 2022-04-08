@@ -1,0 +1,22 @@
+{
+  "root": "libs/scenery-stays",
+  "sourceRoot": "libs/scenery-stays/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/scenery-stays/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/scenery-stays"],
+      "options": {
+        "jestConfig": "libs/scenery-stays/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

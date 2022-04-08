@@ -9,15 +9,29 @@
   },
   "private": true,
   "devDependencies": {
+    "@nestjs/schematics": "^8.0.0",
+    "@nestjs/testing": "^8.0.0",
     "@nrwl/cli": "13.10.0",
+    "@nrwl/eslint-plugin-nx": "13.10.0",
+    "@nrwl/jest": "13.10.0",
+    "@nrwl/linter": "13.10.0",
+    "@nrwl/nest": "^13.10.0",
+    "@nrwl/node": "13.10.0",
     "@nrwl/nx-cloud": "latest",
     "@nrwl/react": "^13.10.0",
     "@nrwl/workspace": "13.10.0",
+    "@types/jest": "27.0.2",
     "@types/node": "16.11.7",
+    "@typescript-eslint/eslint-plugin": "~5.18.0",
+    "@typescript-eslint/parser": "~5.18.0",
+    "eslint": "~8.12.0",
+    "eslint-config-prettier": "8.1.0",
     "husky": "^7.0.4",
+    "jest": "27.2.3",
     "lint-staged": "^12.3.7",
     "nx": "13.10.0",
     "prettier": "^2.5.1",
+    "ts-jest": "27.0.5",
     "typescript": "~4.6.2"
   },
   "husky": {
@@ -29,5 +43,13 @@
     "*.{js,json,css,scss,md,ts,html,graphql}": [
       "yarn format --uncommitted"
     ]
+  },
+  "dependencies": {
+    "@nestjs/common": "^8.0.0",
+    "@nestjs/core": "^8.0.0",
+    "@nestjs/platform-express": "^8.0.0",
+    "reflect-metadata": "^0.1.13",
+    "rxjs": "^7.0.0",
+    "tslib": "^2.0.0"
   }
 }

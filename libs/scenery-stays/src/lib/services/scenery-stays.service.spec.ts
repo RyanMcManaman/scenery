@@ -14,8 +14,8 @@ describe('SceneryStaysService', () => {
   })
 
   describe('getData', () => {
-    it('should return "Welcome to scenery-api!"', () => {
-      expect(service.getData()).toEqual({ message: 'Welcome to scenery-api!' })
+    it('should return "Welcome to scenery-stays!"', () => {
+      expect(service.getData()).toEqual({ message: 'Welcome to scenery-stays!' })
     })
   })
 })

@@ -1,0 +1,22 @@
+{
+  "root": "libs/scenery-health",
+  "sourceRoot": "libs/scenery-health/src",
+  "targets": {
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/scenery-health/**/*.ts"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/scenery-health"],
+      "options": {
+        "jestConfig": "libs/scenery-health/jest.config.js",
+        "passWithNoTests": true
+      }
+    }
+  },
+  "tags": []
+}

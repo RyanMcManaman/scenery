@@ -13,9 +13,9 @@ describe('AppController', () => {
   })
 
   describe('getData', () => {
-    it('should return "Welcome to scenery-api!"', () => {
+    it('should return "Welcome to scenery-stays!"', () => {
       const appController = app.get<SceneryStaysController>(SceneryStaysController)
-      expect(appController.getData()).toEqual({ message: 'Welcome to scenery-api!' })
+      expect(appController.getData()).toEqual({ message: 'Welcome to scenery-stays!' })
     })
   })
 })

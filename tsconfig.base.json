@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@scenery/scenery-health": ["libs/scenery-health/src/index.ts"],
       "@scenery/scenery-stays": ["libs/scenery-stays/src/index.ts"]
     }
   },

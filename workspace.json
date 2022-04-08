@@ -2,6 +2,7 @@
   "version": 2,
   "projects": {
     "scenery-api": "apps/scenery-api",
+    "scenery-health": "libs/scenery-health",
     "scenery-site": "apps/scenery-site",
     "scenery-site-e2e": "apps/scenery-site-e2e",
     "scenery-stays": "libs/scenery-stays"

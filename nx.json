@@ -13,15 +13,6 @@
     },
     ".eslintrc.json": "*"
   },
-  "tasksRunnerOptions": {
-    "default": {
-      "runner": "@nrwl/workspace/tasks-runners",
-      "options": {
-        "cacheableOperations": ["build", "lint", "test", "e2e"],
-        "runtimeCacheInputs": ["node -v"]
-      }
-    }
-  },
   "targetDependencies": {
     "build": [
       {

@@ -2,6 +2,8 @@ import { Module } from '@nestjs/common'
 import { ConfigModule } from '@nestjs/config'
 import { configuration } from './config/scenery-stays.configuration'
 import { validationSchema } from './config/scenery-stays.validation'
+import { SceneryStaysController } from './controllers/scenery-stays.controller'
+import { SceneryStaysService } from './services/scenery-stays.service'
 
 @Module({
   imports: [
@@ -11,8 +13,8 @@ import { validationSchema } from './config/scenery-stays.validation'
       validationSchema,
     }),
   ],
-  controllers: [],
-  providers: [],
-  exports: [],
+  controllers: [SceneryStaysController],
+  providers: [SceneryStaysService],
+  exports: [SceneryStaysService],
 })
 export class SceneryStaysModule {}

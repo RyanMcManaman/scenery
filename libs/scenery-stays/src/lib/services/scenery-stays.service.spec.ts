@@ -1,16 +1,16 @@
 import { Test } from '@nestjs/testing'
 
-import { AppService } from './app.service'
+import { SceneryStaysService } from './scenery-stays.service'
 
-describe('AppService', () => {
-  let service: AppService
+describe('SceneryStaysService', () => {
+  let service: SceneryStaysService
 
   beforeAll(async () => {
     const app = await Test.createTestingModule({
-      providers: [AppService],
+      providers: [SceneryStaysService],
     }).compile()
 
-    service = app.get<AppService>(AppService)
+    service = app.get<SceneryStaysService>(SceneryStaysService)
   })
 
   describe('getData', () => {

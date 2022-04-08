@@ -1,21 +1,20 @@
 import { Test, TestingModule } from '@nestjs/testing'
-
-import { AppController } from './app.controller'
-import { AppService } from './app.service'
+import { SceneryStaysService } from '../services/scenery-stays.service'
+import { SceneryStaysController } from './scenery-stays.controller'
 
 describe('AppController', () => {
   let app: TestingModule
 
   beforeAll(async () => {
     app = await Test.createTestingModule({
-      controllers: [AppController],
-      providers: [AppService],
+      controllers: [SceneryStaysController],
+      providers: [SceneryStaysService],
     }).compile()
   })
 
   describe('getData', () => {
     it('should return "Welcome to scenery-api!"', () => {
-      const appController = app.get<AppController>(AppController)
+      const appController = app.get<SceneryStaysController>(SceneryStaysController)
       expect(appController.getData()).toEqual({ message: 'Welcome to scenery-api!' })
     })
   })

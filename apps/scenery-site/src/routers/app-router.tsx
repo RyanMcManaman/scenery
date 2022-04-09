@@ -1,7 +1,7 @@
 import { Route, Router, Switch } from 'react-router-dom'
 import { createBrowserHistory as createHistory } from 'history'
 
-import Dashboard from '../features/Dashboard/Dashboard'
+import Dashboard from '../features/Dashboard/dashboard'
 
 export const history = createHistory()
 
